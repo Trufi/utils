@@ -1,0 +1,15 @@
+export { vec2angle } from './angle';
+export { vec2copy } from './copy';
+export { vec2create } from './create';
+export { vec2cross } from './cross';
+export { vec2dist } from './dist';
+export { vec2dot } from './dot';
+export { vec2equals } from './equal';
+export { vec2exactEquals } from './exactEqual';
+export { vec2length } from './length';
+export { vec2lerp } from './lerp';
+export { vec2min } from './min';
+export { vec2max } from './max';
+export { vec2normalize } from './normalize';
+export { vec2rotate } from './rotate';
+export { vec2set } from './set';

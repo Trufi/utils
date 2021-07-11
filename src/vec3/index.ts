@@ -1,0 +1,10 @@
+export { vec3copy } from './copy';
+export { vec3create } from './create';
+export { vec3dist } from './dist';
+export { vec3equals } from './equal';
+export { vec3exactEquals } from './exactEqual';
+export { vec3lerp } from './lerp';
+export { vec3min } from './min';
+export { vec3max } from './max';
+export { vec3normalize } from './normalize';
+export { vec3set } from './set';

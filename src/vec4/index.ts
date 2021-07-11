@@ -1,0 +1,10 @@
+export { vec4copy } from './copy';
+export { vec4create } from './create';
+export { vec4dist } from './dist';
+export { vec4equals } from './equal';
+export { vec4exactEquals } from './exactEqual';
+export { vec4lerp } from './lerp';
+export { vec4min } from './min';
+export { vec4max } from './max';
+export { vec4normalize } from './normalize';
+export { vec4set } from './set';
