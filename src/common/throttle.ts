@@ -1,11 +1,11 @@
-export function throttle(fn: (...args: any[]) => void, time: number) {
+export function throttle(fn: (...args: any[]) => void, time: number, context?: any) {
     let lock = false;
     let savedArgs: any[] | undefined;
 
     function later() {
         lock = false;
         if (savedArgs) {
-            wrapperFn(...savedArgs);
+            wrapperFn.apply(context, savedArgs);
             savedArgs = undefined;
         }
     }
@@ -14,7 +14,7 @@ export function throttle(fn: (...args: any[]) => void, time: number) {
         if (lock) {
             savedArgs = args;
         } else {
-            fn(...args);
+            fn.apply(context, args);
             setTimeout(later, time);
             lock = true;
         }
