@@ -1,4 +1,5 @@
 export { affineStep } from './affineStep';
+export { applyDefaults } from './applyDefaults';
 export { circleIcon } from './circleIcon';
 export { clamp } from './clamp';
 export { degToRad } from './degToRad';
