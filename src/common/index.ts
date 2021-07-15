@@ -4,6 +4,7 @@ export { circleIcon } from './circleIcon';
 export { clamp } from './clamp';
 export { degToRad } from './degToRad';
 export { EventEmitter } from './eventEmitter';
+export { lerp } from './lerp';
 export { nearestPointOnSegment } from './nearestPointOnSegment';
 export { pick } from './pick';
 export { radToDeg } from './radToDeg';
