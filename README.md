@@ -4,7 +4,7 @@ My utility functions.
 
 ## Usage
 
-Install with NPM
+Install with npm:
 
 ```sh
 npm install @trufi/utils

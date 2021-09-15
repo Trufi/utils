@@ -1,6 +1,6 @@
 {
     "name": "@trufi/utils",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "Trufi's utility functions",
     "main": "dist/index.js",
     "repository": {
@@ -16,7 +16,7 @@
     "scripts": {
         "build": "tsc",
         "dev": "tsc --watch",
-        "test": "npm run prettier",
+        "test": "npm run prettier && npm run build",
         "prettier": "prettier --check \"./**/*.ts\"",
         "prepublishOnly": "shx rm -rf dist && npm run build && shx cp -r dist/* .",
         "postpublish": "git clean -df"
