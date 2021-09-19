@@ -11,3 +11,4 @@ export { radToDeg } from './radToDeg';
 export { round } from './round';
 export { sign } from './sign';
 export { throttle } from './throttle';
+export { mod } from './mod';
