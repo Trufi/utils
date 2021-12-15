@@ -1,6 +1,6 @@
 {
     "name": "@trufi/utils",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "description": "Trufi's utility functions",
     "main": "dist/index.js",
     "repository": {
