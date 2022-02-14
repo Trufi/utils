@@ -1,10 +1,15 @@
+export { vec3add } from './add';
+export { vec3ceil } from './ceil';
 export { vec3copy } from './copy';
 export { vec3create } from './create';
 export { vec3dist } from './dist';
 export { vec3equals } from './equal';
 export { vec3exactEquals } from './exactEqual';
+export { vec3floor } from './floor';
 export { vec3lerp } from './lerp';
-export { vec3min } from './min';
 export { vec3max } from './max';
+export { vec3min } from './min';
+export { vec3mul } from './mul';
 export { vec3normalize } from './normalize';
 export { vec3set } from './set';
+export { vec3sub } from './sub';
