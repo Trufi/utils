@@ -1,8 +1,10 @@
 export { vec3add } from './add';
+export { vec3angle } from './angle';
 export { vec3ceil } from './ceil';
 export { vec3copy } from './copy';
 export { vec3create } from './create';
 export { vec3dist } from './dist';
+export { vec3dot } from './dot';
 export { vec3equals } from './equal';
 export { vec3exactEquals } from './exactEqual';
 export { vec3floor } from './floor';

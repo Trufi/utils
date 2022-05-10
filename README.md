@@ -2,6 +2,8 @@
 
 My utility functions.
 
+Vector and matrix functions were taken from https://github.com/toji/gl-matrix.
+
 ## Usage
 
 Install with npm:
@@ -24,5 +26,5 @@ import { vec2lerp } from '@trufi/utils/vec2/lerp';
 
 ## Contributing principles
 
-1. **One function — one file.**
-2. **Zero dependencies.**
+1. One function — one file.
+2. Zero dependencies.

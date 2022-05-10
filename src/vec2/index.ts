@@ -16,5 +16,6 @@ export { vec2min } from './min';
 export { vec2mul } from './mul';
 export { vec2normalize } from './normalize';
 export { vec2rotate } from './rotate';
+export { vec2rotation } from './rotation';
 export { vec2set } from './set';
 export { vec2sub } from './sub';
