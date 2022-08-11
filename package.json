@@ -1,12 +1,12 @@
 {
     "name": "@trufi/utils",
-    "version": "0.0.11",
+    "version": "0.0.12",
     "description": "Trufi's utility functions",
     "main": "dist/index.js",
     "module": "dist/module/index.js",
     "exports": {
         "module": "./dist/module",
-        "require": "./dist",
+        "require": "./dist/index.js",
         "default": "./dist"
     },
     "repository": {
@@ -30,8 +30,8 @@
         "postpublish": "git clean -df"
     },
     "devDependencies": {
-        "prettier": "^2.5.1",
+        "prettier": "^2.7.1",
         "shx": "^0.3.4",
-        "typescript": "^4.5.5"
+        "typescript": "^4.7.4"
     }
 }
