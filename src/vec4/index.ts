@@ -11,5 +11,7 @@ export { vec4max } from './max';
 export { vec4min } from './min';
 export { vec4mul } from './mul';
 export { vec4normalize } from './normalize';
+export { vec4scale } from './scale';
 export { vec4set } from './set';
 export { vec4sub } from './sub';
+export { vec4transformMat4 } from './transformMat4';

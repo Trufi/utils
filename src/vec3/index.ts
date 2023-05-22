@@ -13,5 +13,6 @@ export { vec3max } from './max';
 export { vec3min } from './min';
 export { vec3mul } from './mul';
 export { vec3normalize } from './normalize';
+export { vec3scale } from './scale';
 export { vec3set } from './set';
 export { vec3sub } from './sub';

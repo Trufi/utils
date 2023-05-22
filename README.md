@@ -2,7 +2,7 @@
 
 My utility functions.
 
-Vector and matrix functions were taken from https://github.com/toji/gl-matrix.
+Vector and matrix functions are taken from https://github.com/toji/gl-matrix.
 
 ## Usage
 
