@@ -10,9 +10,10 @@
         "importHelpers": false,
         "noUnusedLocals": true,
         "noUnusedParameters": true,
-        "importsNotUsedAsValues": "preserve",
         "declaration": true,
-        "outDir": "dist"
+        "outDir": "dist",
+        "allowJs": true,
+        "checkJs": true
     },
     "include": ["src/**/*"]
 }

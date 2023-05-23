@@ -1,7 +1,9 @@
 /**
  * Haversine formula
+ * @param {number[]} lngLat1
+ * @param {number[]} lngLat2
  */
-export function geoDistance(lngLat1: number[], lngLat2: number[]): number {
+export function geoDistance(lngLat1, lngLat2) {
     const R = 6371000;
     const rad = Math.PI / 180;
     const lat1 = lngLat1[1] * rad;

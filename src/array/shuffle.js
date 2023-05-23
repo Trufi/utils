@@ -1,4 +1,10 @@
-export function arrayShuffle<T>(array: T[], randomFn = Math.random): T[] {
+/**
+ * @template T
+ * @param array {T[]}
+ * @param randomFn {() => number}
+ * @returns {T[]}
+ */
+export function arrayShuffle(array, randomFn = Math.random) {
     const out = array.slice();
 
     for (let i = 0; i < out.length; i++) {

@@ -1,5 +1,8 @@
 import { percentile } from './percentile';
 
-export function p90(sample: number[]) {
+/**
+ * @param {number[]} sample
+ */
+export function p90(sample) {
     return percentile(sample, 0.9);
 }

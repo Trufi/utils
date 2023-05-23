@@ -1,16 +1,23 @@
-export class EventEmitter<M> {
-    private events: { [K in keyof M]?: Array<(ev: M[K]) => void> };
-
+/**
+ * @template M
+ */
+export class EventEmitter {
     constructor() {
+        /**
+         * @private
+         * @type {{ [K in keyof M]?: Array<(ev: M[K]) => void> }}
+         */
         this.events = {};
     }
 
     /**
      * Registers event listener
-     * @param type Event type
-     * @param listener Event handler
+     * @public
+     * @template {keyof M} K
+     * @param type {K} Event type
+     * @param listener {(ev: M[K]) => void} Event handler
      */
-    public on<K extends keyof M>(type: K, listener: (ev: M[K]) => void): this {
+    on(type, listener) {
         let eventsByType = this.events[type];
         if (!eventsByType) {
             eventsByType = this.events[type] = [];
@@ -21,11 +28,14 @@ export class EventEmitter<M> {
 
     /**
      * Registers event listener which will be called once
-     * @param type Event type
-     * @param listener Event handler
+     * @public
+     * @template {keyof M} K
+     * @param type {K} Event type
+     * @param listener {(ev: M[K]) => void} Event handler
      */
-    public once<K extends keyof M>(type: K, listener: (ev: M[K]) => void): this {
-        const wrapper = (data: M[K]) => {
+    once(type, listener) {
+        /** @param {M[K]} data */
+        const wrapper = (data) => {
             this.off(type, wrapper);
             listener.call(this, data);
         };
@@ -37,10 +47,12 @@ export class EventEmitter<M> {
 
     /**
      * Removes event listener registered with `on`
-     * @param type Event type
-     * @param listener Event handler
+     * @public
+     * @template {keyof M} K
+     * @param type {K} Event type
+     * @param listener {(ev: M[K]) => void} Event handler
      */
-    public off<K extends keyof M>(type: K, listener: (ev: M[K]) => void): this {
+    off(type, listener) {
         const eventsByType = this.events[type];
 
         if (!eventsByType) {
@@ -58,10 +70,12 @@ export class EventEmitter<M> {
 
     /**
      * Calls all event listeners with event type `type`
-     * @param type Event type
-     * @param data Data transferred to events
+     * @public
+     * @template {keyof M} K
+     * @param type {K} Event type
+     * @param data {M[K]=} Data transferred to events
      */
-    public emit<K extends keyof M>(type: K, data?: M[K]): this {
+    emit(type, data) {
         const eventsByType = this.events[type];
 
         if (!eventsByType) {
@@ -71,7 +85,7 @@ export class EventEmitter<M> {
         const events = eventsByType.slice();
 
         for (let i = 0; i < events.length; i++) {
-            events[i].call(this, data as any);
+            events[i].call(this, /** @type any */ (data));
         }
 
         return this;

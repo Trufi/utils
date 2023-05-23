@@ -1,10 +1,11 @@
 /**
  * Находит персентиль в несортированном массиве
- * @param percent From 0 to 1
+ * @param sample {number[]}
+ * @param percent {number} From 0 to 1
  */
-export function percentile(sample: number[], percent: number) {
+export function percentile(sample, percent) {
     const array = sample.slice();
-    array.sort((a: number, b: number) => a - b);
+    array.sort((a, b) => a - b);
 
     // Не совсем верно, ну и пофиг
     const index = Math.floor(array.length * percent);

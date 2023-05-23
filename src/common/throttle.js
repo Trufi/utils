@@ -1,6 +1,13 @@
-export function throttle(fn: (...args: any[]) => void, time: number, context?: any) {
+/**
+ * @param {(...args: any[]) => void} fn
+ * @param {number} time
+ * @param {*=} context
+ */
+export function throttle(fn, time, context) {
     let lock = false;
-    let savedArgs: any[] | undefined;
+
+    /** @type {any[] | undefined} */
+    let savedArgs;
 
     function later() {
         lock = false;
@@ -10,7 +17,10 @@ export function throttle(fn: (...args: any[]) => void, time: number, context?: a
         }
     }
 
-    function wrapperFn(...args: any[]) {
+    /**
+     * @param {any[]} args
+     */
+    function wrapperFn(...args) {
         if (lock) {
             savedArgs = args;
         } else {

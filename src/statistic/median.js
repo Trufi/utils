@@ -1,5 +1,8 @@
 import { percentile } from './percentile';
 
-export function median(sample: number[]) {
+/**
+ * @param {number[]} sample
+ */
+export function median(sample) {
     return percentile(sample, 0.5);
 }

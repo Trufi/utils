@@ -1,4 +1,9 @@
-export function nearestPointOnSegment(point: number[], segmentA: number[], segmentB: number[]) {
+/**
+ * @param {number[]} point
+ * @param {number[]} segmentA
+ * @param {number[]} segmentB
+ */
+export function nearestPointOnSegment(point, segmentA, segmentB) {
     const A = point[0] - segmentA[0];
     const B = point[1] - segmentA[1];
     const C = segmentB[0] - segmentA[0];

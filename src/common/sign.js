@@ -1,4 +1,7 @@
-export function sign(x: number) {
+/**
+ * @param {number} x
+ */
+export function sign(x) {
     x = +x; // convert to a number
     if (x === 0 || Number.isNaN(x)) {
         return x; // 0, -0 or NaN
