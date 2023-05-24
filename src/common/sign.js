@@ -1,5 +1,6 @@
 /**
  * @param {number} x
+ * @returns {number}
  */
 export function sign(x) {
     x = +x; // convert to a number

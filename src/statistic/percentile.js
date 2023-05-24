@@ -1,7 +1,9 @@
 /**
- * Находит персентиль в несортированном массиве
+ * Find a percentile from the unsorted array
+ *
  * @param sample {number[]}
  * @param percent {number} From 0 to 1
+ * @returns {number}
  */
 export function percentile(sample, percent) {
     const array = sample.slice();

@@ -3,6 +3,7 @@
  * @param radius {number}
  * @param color2 {string}
  * @param radius2 {number}
+ * @returns {string}
  */
 export function circleIcon(color, radius, color2 = '#000', radius2 = 0) {
     const icon = `<svg xmlns="http://www.w3.org/2000/svg" width="${radius * 2}" height="${

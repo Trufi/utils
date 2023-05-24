@@ -1,7 +1,9 @@
 /**
  * Haversine formula
+ *
  * @param {number[]} lngLat1
  * @param {number[]} lngLat2
+ * @returns {number}
  */
 export function geoDistance(lngLat1, lngLat2) {
     const R = 6371000;

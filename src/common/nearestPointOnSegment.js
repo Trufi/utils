@@ -2,6 +2,7 @@
  * @param {number[]} point
  * @param {number[]} segmentA
  * @param {number[]} segmentB
+ * @returns {{ t: number; point: number[] }}
  */
 export function nearestPointOnSegment(point, segmentA, segmentB) {
     const A = point[0] - segmentA[0];

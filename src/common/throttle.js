@@ -1,7 +1,9 @@
 /**
- * @param {(...args: any[]) => void} fn
+ * @template {(...args: any[]) => void} T
+ * @param {T} fn
  * @param {number} time
  * @param {*=} context
+ * @returns {T}
  */
 export function throttle(fn, time, context) {
     let lock = false;
@@ -30,5 +32,5 @@ export function throttle(fn, time, context) {
         }
     }
 
-    return wrapperFn;
+    return /** @type {T} */ (wrapperFn);
 }

@@ -1,5 +1,6 @@
 /**
  * @param seed {number} Integer
+ * @returns {() => number}
  */
 export function createRandomFunction(seed) {
     return () => {
