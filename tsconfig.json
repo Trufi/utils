@@ -2,17 +2,14 @@
     "compilerOptions": {
         "target": "ES2022",
         "module": "ES2022",
-        "moduleResolution": "node",
-        "lib": ["dom", "es6"],
-        "sourceMap": true,
+        "moduleResolution": "node16",
+        "lib": ["dom", "es2022"],
         "strict": true,
-        "noEmitHelpers": false,
-        "importHelpers": false,
-        "noUnusedLocals": true,
-        "noUnusedParameters": true,
         "declaration": true,
+        "emitDeclarationOnly": true,
         "allowJs": true,
         "checkJs": true
     },
-    "include": ["src/**/*"]
+    "include": ["*/**/*.js", "index.js"],
+    "exclude": ["node_modules"]
 }

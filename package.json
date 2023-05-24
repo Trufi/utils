@@ -20,7 +20,7 @@
         "postpublish": "git clean -df"
     },
     "devDependencies": {
-        "prettier": "^2.7.1",
-        "typescript": "^4.7.4"
+        "prettier": "^2.8.8",
+        "typescript": "^5.0.4"
     }
 }
